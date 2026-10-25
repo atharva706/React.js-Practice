@@ -1,7 +1,7 @@
 
 import Statcard from "../Components/Statcard";
 import Taskcard from "../Components/Taskcard";
-import MainLayout from "../Components/MainLayout";
+
 
 function Dashboard() {
     const tasks = [
@@ -15,7 +15,6 @@ function Dashboard() {
     const completedTasks = tasks.filter(val => val.status === "Completed").length;
 
     return (
-        <MainLayout>
         <div className="flex min-h-screen bg-slate-50">
 
              <main className="flex-1 min-w-0 px-4 py-10 sm:px-6 lg:px-8">
@@ -74,7 +73,7 @@ function Dashboard() {
             </main>
 
         </div>
-        </MainLayout>
+        
     );
 }
 

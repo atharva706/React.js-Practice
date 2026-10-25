@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 function Taskcard(props) {
     return (
         <div className="bg-white p-5 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition">
@@ -33,6 +33,10 @@ function Taskcard(props) {
                     {props.priority}
                 </span>
             </div>
+
+            <Link to={`/tasks/${props.id}`}  className="text-indigo-600 hover:underline"    >
+                view Details
+            </Link>
         </div>
     );
 }

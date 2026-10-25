@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import Sidebar from "../Components/Sidebar";
 
 function MainLayout({ children }) {
@@ -6,7 +7,8 @@ function MainLayout({ children }) {
             <Sidebar />
 
             <main className="flex-1 min-w-0">
-                {children}
+                {/*children*/}
+                <Outlet/>  {/*for nested routes*/}
             </main>
         </div>
     );
